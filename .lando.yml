@@ -1,0 +1,13 @@
+name: google-auth
+recipe: lamp
+proxy:
+  pma:
+    - pma-google-auth.lndo.site
+config:
+  webroot: public
+  xdebug: true
+services:
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
